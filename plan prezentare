@@ -1,0 +1,44 @@
+OOP - prototype -TypeScript
+presentation plan
+
+Introduction
+introduce myself, background experience
+short description of today’s presentation, objectives and gains
+play icebreaker game (kahoot.it game)	
+
+Content
+OOP
+General concepts
+Encapsulation
+Abstraction
+inheritance
+Polymorphism
+OOP in JavaScript
+Objects in JavaScript
+Constructors and instances
+Properties and methods
+
+Prototype
+Concept
+Prototype vs __proto__
+Prototype chaining
+instanceof
+getPrototypeOf
+isPrototypeOf
+Classes
+Concept
+extends
+this
+super
+
+TypeScript
+Why?
+Classes, Interfaces, Enums, Tuples, Type check
+
+Homework - to be announced
+
+Feedback
+
+
+
+
