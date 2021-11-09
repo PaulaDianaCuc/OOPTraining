@@ -11,24 +11,24 @@ console.log(car.color);
 console.log(car.hasOwnProperty('maxSpeed'));
 
 
-//Open questions: From where does hasOwnProperty method come from?
+//Open question: From where does hasOwnProperty method come from?
 
 console.log(car);
 
-//Open questions: What is __proto__? What are all those methods? Can you find hasOwnProperty?
+//Open question: What is __proto__? What are all those methods? Can you find hasOwnProperty?
 
 // __proto__ is a reference to the object Prototype that helped create this object; its not a visible property (non-iterable)
 car 
-// -> type-ul la __proto__ e Object
+// -> __proto__'s type is Object
 //All objects have access to the Object's prototype. They don't own those properties but have access to them
 console.log(car.hasOwnProperty('__proto__'));// -> false pentru ca __proto__ nu e vizibil pt hasOwnProperty
 
 
 // -- Prototype chaining --
 
-// functiile si proprietatile definite pe prototype-ul unui object vor fi mostenite de toate instantele pt care este parinte 
-//si in cazul functiei constructor, nu se vor duplica
-// lantul acesta de prototype (fiecare object are un prototype care la randul lui are un prototype) se numeste prototype chaining
+// Functions defined on an object's prototype will he inherited by all instances for which the object is parent 
+// They won't be duplicated
+// This chain of prototype of prtototype is called prototype chaining
 
 function CarProto(color) {
   this.color = color;
@@ -48,9 +48,9 @@ console.log(modelS.drive());
 function drive(){}
 const mode = new drive()
 mode
-// resulta ca drive e proto-ul lui mode
-// Prototype-ul e template-ul, obiectul in sine
-// __proto__ e referinta la acel obiect
+
+// Prototype is the template
+// __proto__ is the reference
 
 //Open questions: Can you change the prototype of an object? yes! 
 
